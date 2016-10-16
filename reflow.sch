@@ -1,0 +1,888 @@
+EESchema Schematic File Version 2
+LIBS:reflow-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_pro_micro
+LIBS:my
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Xicor
+LIBS:Zilog
+LIBS:reflow-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "reflow control"
+Date "24 jun 2014"
+Rev "5"
+Comp "hexo, base48"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BRIDGE D1
+U 1 1 539AD79E
+P 2900 6500
+F 0 "D1" H 2900 6550 70  0000 C CNN
+F 1 "BRIDGE" H 2900 6450 70  0000 C CNN
+F 2 "libs:SDB107" H 2900 6500 60  0001 C CNN
+F 3 "~" H 2900 6500 60  0000 C CNN
+	1    2900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 539AD7AE
+P 4350 6500
+F 0 "D2" H 4350 6600 40  0000 C CNN
+F 1 "1n4001" H 4350 6400 40  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 4350 6500 60  0001 C CNN
+F 3 "~" H 4350 6500 60  0000 C CNN
+	1    4350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q1
+U 1 1 539AD7C1
+P 4700 4850
+F 0 "Q1" H 4700 4701 40  0000 R CNN
+F 1 "BC547" H 4700 5000 40  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide_Oval" H 4600 4952 29  0001 C CNN
+F 3 "" H 4700 4850 60  0000 C CNN
+	1    4700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-reflow R1
+U 1 1 539AD7D0
+P 3950 5150
+F 0 "R1" V 4030 5150 40  0000 C CNN
+F 1 "8k2" V 3957 5151 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3880 5150 30  0001 C CNN
+F 3 "~" H 3950 5150 30  0000 C CNN
+	1    3950 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED-RESCUE-reflow D7
+U 1 1 539AD874
+P 6900 5250
+F 0 "D7" H 6900 5350 50  0000 C CNN
+F 1 "LED" H 6900 5150 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6900 5250 60  0001 C CNN
+F 3 "~" H 6900 5250 60  0000 C CNN
+	1    6900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-reflow R7
+U 1 1 539AD881
+P 6900 5800
+F 0 "R7" V 6980 5800 40  0000 C CNN
+F 1 "220" V 6907 5801 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6830 5800 30  0001 C CNN
+F 3 "~" H 6900 5800 30  0000 C CNN
+	1    6900 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 539AD8A4
+P 850 4600
+F 0 "P1" V 800 4600 40  0000 C CNN
+F 1 "CONN_2" V 900 4600 40  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 850 4600 60  0001 C CNN
+F 3 "~" H 850 4600 60  0000 C CNN
+	1    850  4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR1
+U 1 1 539AD8D0
+P 1950 6750
+F 0 "#PWR1" H 1950 6750 30  0001 C CNN
+F 1 "GND" H 1950 6680 30  0001 C CNN
+F 2 "" H 1950 6750 60  0000 C CNN
+F 3 "" H 1950 6750 60  0000 C CNN
+	1    1950 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR3
+U 1 1 539AD94D
+P 4700 7100
+F 0 "#PWR3" H 4700 7100 30  0001 C CNN
+F 1 "GND" H 4700 7030 30  0001 C CNN
+F 2 "" H 4700 7100 60  0000 C CNN
+F 3 "" H 4700 7100 60  0000 C CNN
+	1    4700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR8
+U 1 1 539AD953
+P 5800 7100
+F 0 "#PWR8" H 5800 7100 30  0001 C CNN
+F 1 "GND" H 5800 7030 30  0001 C CNN
+F 2 "" H 5800 7100 60  0000 C CNN
+F 3 "" H 5800 7100 60  0000 C CNN
+	1    5800 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR6
+U 1 1 539AD972
+P 5250 7000
+F 0 "#PWR6" H 5250 7000 30  0001 C CNN
+F 1 "GND" H 5250 6930 30  0001 C CNN
+F 2 "" H 5250 7000 60  0000 C CNN
+F 3 "" H 5250 7000 60  0000 C CNN
+	1    5250 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 539AD98D
+P 5800 6450
+F 0 "#PWR7" H 5800 6540 20  0001 C CNN
+F 1 "+5V" H 5800 6540 30  0000 C CNN
+F 2 "" H 5800 6450 60  0000 C CNN
+F 3 "" H 5800 6450 60  0000 C CNN
+	1    5800 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR5
+U 1 1 539AE04F
+P 4800 5200
+F 0 "#PWR5" H 4800 5200 30  0001 C CNN
+F 1 "GND" H 4800 5130 30  0001 C CNN
+F 2 "" H 4800 5200 60  0000 C CNN
+F 3 "" H 4800 5200 60  0000 C CNN
+	1    4800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5 P2
+U 1 1 539AEBAE
+P 9400 3800
+F 0 "P2" V 9350 3800 50  0000 C CNN
+F 1 "SPI_ADC" V 9450 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 9400 3800 60  0001 C CNN
+F 3 "~" H 9400 3800 60  0000 C CNN
+	1    9400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR19
+U 1 1 539AEBF5
+P 8850 3600
+F 0 "#PWR19" H 8850 3690 20  0001 C CNN
+F 1 "+5V" H 8850 3690 30  0000 C CNN
+F 2 "" H 8850 3600 60  0000 C CNN
+F 3 "" H 8850 3600 60  0000 C CNN
+	1    8850 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR20
+U 1 1 539AEC36
+P 8850 3700
+F 0 "#PWR20" H 8850 3700 30  0001 C CNN
+F 1 "GND" H 8850 3630 30  0001 C CNN
+F 2 "" H 8850 3700 60  0000 C CNN
+F 3 "" H 8850 3700 60  0000 C CNN
+	1    8850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR15
+U 1 1 539AEECA
+P 6900 4950
+F 0 "#PWR15" H 6900 5040 20  0001 C CNN
+F 1 "+5V" H 6900 5040 30  0000 C CNN
+F 2 "" H 6900 4950 60  0000 C CNN
+F 3 "" H 6900 4950 60  0000 C CNN
+	1    6900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR16
+U 1 1 539AEF4B
+P 6900 6100
+F 0 "#PWR16" H 6900 6100 30  0001 C CNN
+F 1 "GND" H 6900 6030 30  0001 C CNN
+F 2 "" H 6900 6100 60  0000 C CNN
+F 3 "" H 6900 6100 60  0000 C CNN
+	1    6900 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Pro_Micro U2
+U 1 1 57EEC444
+P 7550 3500
+F 0 "U2" H 7550 3400 60  0000 C CNN
+F 1 "Arduino_Pro_Micro" H 7550 2800 60  0000 C CNN
+F 2 "Housings_DIP:DIP-24_W15.24mm_LongPads" H 7550 3200 60  0001 C CNN
+F 3 "" H 7550 3200 60  0000 C CNN
+	1    7550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P4
+U 1 1 57F187AA
+P 9400 3200
+F 0 "P4" V 9350 3200 40  0000 C CNN
+F 1 "ANALOG_IN" V 9450 3200 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9400 3200 60  0001 C CNN
+F 3 "~" H 9400 3200 60  0000 C CNN
+	1    9400 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR21
+U 1 1 57F192A1
+P 8950 3100
+F 0 "#PWR21" H 8950 3100 30  0001 C CNN
+F 1 "GND" H 8950 3030 30  0001 C CNN
+F 2 "" H 8950 3100 60  0000 C CNN
+F 3 "" H 8950 3100 60  0000 C CNN
+	1    8950 3100
+	0    1    1    0   
+$EndComp
+Text Notes 9550 3250 0    60   ~ 0
+ANALOG IN
+$Comp
+L GND-RESCUE-reflow #PWR9
+U 1 1 57F3B4C6
+P 6050 7100
+F 0 "#PWR9" H 6050 7100 30  0001 C CNN
+F 1 "GND" H 6050 7030 30  0001 C CNN
+F 2 "" H 6050 7100 60  0000 C CNN
+F 3 "" H 6050 7100 60  0000 C CNN
+	1    6050 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-reflow C5
+U 1 1 57F3BD03
+P 6650 6800
+F 0 "C5" H 6650 6900 40  0000 L CNN
+F 1 "100n" H 6656 6715 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L7_W2.5_P5" H 6688 6650 30  0001 C CNN
+F 3 "~" H 6650 6800 60  0000 C CNN
+	1    6650 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR14
+U 1 1 57F3BDFD
+P 6650 7100
+F 0 "#PWR14" H 6650 7100 30  0001 C CNN
+F 1 "GND" H 6650 7030 30  0001 C CNN
+F 2 "" H 6650 7100 60  0000 C CNN
+F 3 "" H 6650 7100 60  0000 C CNN
+	1    6650 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 57F3C3E4
+P 5800 6800
+F 0 "C2" H 5825 6900 50  0000 L CNN
+F 1 "10u" H 5825 6700 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 5838 6650 50  0001 C CNN
+F 3 "" H 5800 6800 50  0000 C CNN
+	1    5800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 57F3C4BD
+P 6050 6800
+F 0 "C3" H 6075 6900 50  0000 L CNN
+F 1 "220u" H 6075 6700 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 6088 6650 50  0001 C CNN
+F 3 "" H 6050 6800 50  0000 C CNN
+	1    6050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 57F3C6D1
+P 4700 6800
+F 0 "C1" H 4725 6900 50  0000 L CNN
+F 1 "10u" H 4725 6700 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D6.3_L11.2_P2.5" H 4738 6650 50  0001 C CNN
+F 3 "" H 4700 6800 50  0000 C CNN
+	1    4700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR13
+U 1 1 57F47818
+P 6600 3300
+F 0 "#PWR13" H 6600 3300 30  0001 C CNN
+F 1 "GND" H 6600 3230 30  0001 C CNN
+F 2 "" H 6600 3300 60  0000 C CNN
+F 3 "" H 6600 3300 60  0000 C CNN
+	1    6600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR12
+U 1 1 57F48B2D
+P 6600 3200
+F 0 "#PWR12" H 6600 3200 30  0001 C CNN
+F 1 "GND" H 6600 3130 30  0001 C CNN
+F 2 "" H 6600 3200 60  0000 C CNN
+F 3 "" H 6600 3200 60  0000 C CNN
+	1    6600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR18
+U 1 1 57F48D40
+P 8550 3100
+F 0 "#PWR18" H 8550 3100 30  0001 C CNN
+F 1 "GND" H 8550 3030 30  0001 C CNN
+F 2 "" H 8550 3100 60  0000 C CNN
+F 3 "" H 8550 3100 60  0000 C CNN
+	1    8550 3100
+	0    -1   -1   0   
+$EndComp
+Text Notes 6650 2350 0    60   ~ 0
+CONTROL
+$Comp
+L F_Small F1
+U 1 1 57FA3CE4
+P 2650 5650
+F 0 "F1" H 2610 5710 50  0000 L CNN
+F 1 "F_Small" H 2530 5590 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 2650 5650 50  0001 C CNN
+F 3 "" H 2650 5650 50  0000 C CNN
+	1    2650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-reflow D4
+U 1 1 57EF3814
+P 6400 4300
+F 0 "D4" H 6400 4400 50  0000 C CNN
+F 1 "LED" H 6400 4200 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6400 4300 60  0001 C CNN
+F 3 "~" H 6400 4300 60  0000 C CNN
+	1    6400 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-reflow R16
+U 1 1 57EF3918
+P 6400 4750
+F 0 "R16" V 6480 4750 40  0000 C CNN
+F 1 "220" V 6407 4751 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6330 4750 30  0001 C CNN
+F 3 "~" H 6400 4750 30  0000 C CNN
+	1    6400 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR11
+U 1 1 57EF39F6
+P 6400 5000
+F 0 "#PWR11" H 6400 5000 30  0001 C CNN
+F 1 "GND" H 6400 4930 30  0001 C CNN
+F 2 "" H 6400 5000 60  0000 C CNN
+F 3 "" H 6400 5000 60  0000 C CNN
+	1    6400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P7
+U 1 1 57EF4A40
+P 5900 3650
+F 0 "P7" H 5900 3800 50  0000 C CNN
+F 1 "TRIAC" V 6000 3650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5900 3650 50  0001 C CNN
+F 3 "" H 5900 3650 50  0000 C CNN
+	1    5900 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR10
+U 1 1 57EF4E64
+P 6250 3700
+F 0 "#PWR10" H 6250 3700 30  0001 C CNN
+F 1 "GND" H 6250 3630 30  0001 C CNN
+F 2 "" H 6250 3700 60  0000 C CNN
+F 3 "" H 6250 3700 60  0000 C CNN
+	1    6250 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR17
+U 1 1 57EF577F
+P 8450 3000
+F 0 "#PWR17" H 8450 3090 20  0001 C CNN
+F 1 "+5V" H 8450 3090 30  0000 C CNN
+F 2 "" H 8450 3000 60  0000 C CNN
+F 3 "" H 8450 3000 60  0000 C CNN
+	1    8450 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 3700 0    60   ~ 0
+TRIAC
+Text Notes 9550 3850 0    60   ~ 0
+SPI
+$Comp
+L LM7805CT U1
+U 1 1 57EF2886
+P 5250 6550
+F 0 "U1" H 5050 6750 50  0000 C CNN
+F 1 "LM7805CT" H 5250 6750 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 5250 6650 50  0000 C CIN
+F 3 "" H 5250 6550 50  0000 C CNN
+	1    5250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P8
+U 1 1 57EF43D0
+P 5400 1650
+F 0 "P8" H 5400 1750 50  0000 C CNN
+F 1 "CONN_01X01" V 5500 1650 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 5400 1650 50  0001 C CNN
+F 3 "" H 5400 1650 50  0000 C CNN
+	1    5400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 57EF4727
+P 5400 1900
+F 0 "P9" H 5400 2000 50  0000 C CNN
+F 1 "CONN_01X01" V 5500 1900 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 5400 1900 50  0001 C CNN
+F 3 "" H 5400 1900 50  0000 C CNN
+	1    5400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P10
+U 1 1 57EF47D6
+P 5400 2150
+F 0 "P10" H 5400 2250 50  0000 C CNN
+F 1 "CONN_01X01" V 5500 2150 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 5400 2150 50  0001 C CNN
+F 3 "" H 5400 2150 50  0000 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P11
+U 1 1 57EF4882
+P 5400 2400
+F 0 "P11" H 5400 2500 50  0000 C CNN
+F 1 "CONN_01X01" V 5500 2400 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 5400 2400 50  0001 C CNN
+F 3 "" H 5400 2400 50  0000 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+Text Notes 5650 2550 1    60   ~ 0
+mounting holes for control
+$Comp
+L CONN_02X07 P12
+U 1 1 57EF9155
+P 2150 4600
+F 0 "P12" H 2150 5000 50  0000 C CNN
+F 1 "CONN_02X07" V 2150 4600 50  0000 C CNN
+F 2 "Transformers_CHK:Trafo_CHK-EI54-16VA_1xSec" H 2150 3400 50  0001 C CNN
+F 3 "" H 2150 3400 50  0000 C CNN
+	1    2150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR2
+U 1 1 57F08493
+P 4700 3900
+F 0 "#PWR2" H 4700 3990 20  0001 C CNN
+F 1 "+5V" H 4700 3990 30  0000 C CNN
+F 2 "" H 4700 3900 60  0000 C CNN
+F 3 "" H 4700 3900 60  0000 C CNN
+	1    4700 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-reflow #PWR4
+U 1 1 57F0867B
+P 4750 4000
+F 0 "#PWR4" H 4750 4000 30  0001 C CNN
+F 1 "GND" H 4750 3930 30  0001 C CNN
+F 2 "" H 4750 4000 60  0000 C CNN
+F 3 "" H 4750 4000 60  0000 C CNN
+	1    4750 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X05 P13
+U 1 1 57F0D85F
+P 9650 2100
+F 0 "P13" H 9650 2400 50  0000 C CNN
+F 1 "ROT_ENC" V 9750 2100 50  0000 C CNN
+F 2 "libs:ROT_ENC_DIP-6_W15.24mm_LongPads" H 9650 2100 50  0001 C CNN
+F 3 "" H 9650 2100 50  0000 C CNN
+	1    9650 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P3
+U 1 1 57F0E38B
+P 9650 1550
+F 0 "P3" H 9650 1800 50  0000 C CNN
+F 1 "I2C_OLED" V 9750 1550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 9650 1550 50  0001 C CNN
+F 3 "" H 9650 1550 50  0000 C CNN
+	1    9650 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X07 P14
+U 1 1 57F0EBF8
+P 10650 1700
+F 0 "P14" H 10650 2100 50  0000 C CNN
+F 1 "CONN_01X07" V 10750 1700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 10650 1700 50  0001 C CNN
+F 3 "" H 10650 1700 50  0000 C CNN
+	1    10650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X07 P15
+U 1 1 57F0F195
+P 4500 3700
+F 0 "P15" H 4500 4100 50  0000 C CNN
+F 1 "CONN_01X07" V 4600 3700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0000 C CNN
+	1    4500 3700
+	-1   0    0    -1  
+$EndComp
+Text Notes 4850 3700 1    60   ~ 0
+DIR
+Text Notes 4700 3800 0    60   ~ 0
+BTN
+Text Notes 4850 3500 1    60   ~ 0
+I2C
+$Comp
+L CONN_01X01 P16
+U 1 1 57F13F85
+P 6350 1600
+F 0 "P16" H 6350 1700 50  0000 C CNN
+F 1 "CONN_01X01" V 6450 1600 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6350 1600 50  0001 C CNN
+F 3 "" H 6350 1600 50  0000 C CNN
+	1    6350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P17
+U 1 1 57F13F8B
+P 6350 1850
+F 0 "P17" H 6350 1950 50  0000 C CNN
+F 1 "CONN_01X01" V 6450 1850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6350 1850 50  0001 C CNN
+F 3 "" H 6350 1850 50  0000 C CNN
+	1    6350 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 6600 2000 1    60   ~ 0
+mounting holes for control
+Wire Wire Line
+	5250 3000 6650 3000
+Wire Wire Line
+	5250 3700 5250 3000
+Wire Wire Line
+	5150 3600 5150 3100
+Wire Wire Line
+	10250 2300 9850 2300
+Connection ~ 9950 2000
+Wire Wire Line
+	9950 2200 9850 2200
+Wire Wire Line
+	9850 1800 10450 1800
+Wire Wire Line
+	10250 2000 10450 2000
+Wire Wire Line
+	10250 2000 10250 2300
+Connection ~ 9950 1500
+Wire Wire Line
+	9950 1500 9950 2200
+Wire Wire Line
+	9850 2000 9950 2000
+Wire Wire Line
+	10150 1900 10450 1900
+Wire Wire Line
+	10150 2100 10150 1900
+Wire Wire Line
+	9850 2100 10150 2100
+Wire Wire Line
+	9850 1800 9850 1900
+Wire Wire Line
+	9850 1700 10450 1700
+Wire Wire Line
+	10450 1600 9850 1600
+Wire Wire Line
+	9850 1500 10450 1500
+Wire Wire Line
+	10450 1400 9850 1400
+Wire Wire Line
+	5250 3700 4700 3700
+Wire Wire Line
+	5150 3100 6650 3100
+Wire Wire Line
+	4700 3600 5150 3600
+Wire Wire Line
+	4700 3800 6650 3800
+Wire Wire Line
+	4700 3500 6650 3500
+Wire Wire Line
+	4700 3400 6650 3400
+Wire Wire Line
+	2400 5400 2400 5650
+Wire Wire Line
+	1900 5400 2400 5400
+Wire Wire Line
+	1900 4900 1900 5400
+Wire Wire Line
+	1550 5650 2200 5650
+Wire Wire Line
+	1550 4700 1550 5650
+Wire Wire Line
+	1900 4700 1550 4700
+Wire Wire Line
+	1200 4600 1200 4700
+Wire Wire Line
+	1900 4600 1200 4600
+Wire Wire Line
+	1200 4300 1200 4500
+Wire Wire Line
+	1900 4300 1200 4300
+Wire Wire Line
+	6100 3700 6250 3700
+Wire Wire Line
+	6650 4100 6400 4100
+Wire Wire Line
+	2750 5650 2900 5650
+Wire Wire Line
+	2400 5650 2550 5650
+Wire Wire Line
+	8550 3300 9050 3300
+Wire Wire Line
+	8550 3100 8450 3100
+Wire Wire Line
+	6600 3200 6650 3200
+Wire Wire Line
+	6650 3300 6600 3300
+Wire Wire Line
+	6650 6500 6650 6600
+Wire Wire Line
+	6650 7100 6650 7000
+Connection ~ 6050 6500
+Wire Wire Line
+	6050 6500 6050 6650
+Wire Wire Line
+	6050 6950 6050 7100
+Wire Wire Line
+	6100 3600 6650 3600
+Wire Wire Line
+	8950 3100 9050 3100
+Wire Wire Line
+	8550 3700 8550 3300
+Wire Wire Line
+	8450 3700 8550 3700
+Wire Wire Line
+	5800 4650 5800 3900
+Wire Wire Line
+	3950 5400 3950 6500
+Wire Wire Line
+	3950 4900 3950 4850
+Wire Wire Line
+	5800 3900 6650 3900
+Wire Wire Line
+	6900 6100 6900 6050
+Wire Wire Line
+	6900 5550 6900 5450
+Wire Wire Line
+	6900 4950 6900 5050
+Wire Wire Line
+	8850 3700 9000 3700
+Wire Wire Line
+	8850 3600 9000 3600
+Wire Wire Line
+	8450 4000 9000 4000
+Wire Wire Line
+	8450 3900 9000 3900
+Wire Wire Line
+	8450 3800 9000 3800
+Wire Bus Line
+	8800 3600 8800 3600
+Wire Wire Line
+	4800 4650 5800 4650
+Wire Wire Line
+	4800 5200 4800 5050
+Connection ~ 3950 6500
+Wire Wire Line
+	3950 4850 4500 4850
+Connection ~ 5800 6500
+Wire Wire Line
+	5250 7000 5250 6800
+Wire Wire Line
+	4700 6950 4700 7100
+Wire Wire Line
+	5800 6950 5800 7100
+Wire Wire Line
+	5800 6450 5800 6650
+Wire Wire Line
+	5650 6500 6650 6500
+Connection ~ 4700 6500
+Wire Wire Line
+	4700 6500 4700 6650
+Wire Wire Line
+	4550 6500 4850 6500
+Wire Wire Line
+	3750 6500 4150 6500
+Wire Wire Line
+	1950 6500 1950 6750
+Wire Wire Line
+	2050 6500 1950 6500
+Wire Wire Line
+	2200 7350 2900 7350
+Wire Wire Line
+	2200 5650 2200 7350
+Text Notes 9550 1200 0    60   ~ 0
+UI - Rot encoder and OLED
+Wire Wire Line
+	4700 4000 4750 4000
+$Comp
+L CONN_01X01 P5
+U 1 1 57F1EDEC
+P 8900 1300
+F 0 "P5" H 8900 1400 50  0000 C CNN
+F 1 "CONN_01X01" V 9000 1300 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8900 1300 50  0001 C CNN
+F 3 "" H 8900 1300 50  0000 C CNN
+	1    8900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 57F1EDF2
+P 8900 1550
+F 0 "P6" H 8900 1650 50  0000 C CNN
+F 1 "CONN_01X01" V 9000 1550 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8900 1550 50  0001 C CNN
+F 3 "" H 8900 1550 50  0000 C CNN
+	1    8900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P18
+U 1 1 57F1EDF8
+P 8900 1800
+F 0 "P18" H 8900 1900 50  0000 C CNN
+F 1 "CONN_01X01" V 9000 1800 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8900 1800 50  0001 C CNN
+F 3 "" H 8900 1800 50  0000 C CNN
+	1    8900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P19
+U 1 1 57F1EDFE
+P 8900 2050
+F 0 "P19" H 8900 2150 50  0000 C CNN
+F 1 "CONN_01X01" V 9000 2050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 8900 2050 50  0001 C CNN
+F 3 "" H 8900 2050 50  0000 C CNN
+	1    8900 2050
+	1    0    0    -1  
+$EndComp
+Text Notes 9150 2200 1    60   ~ 0
+mounting holes for UI
+$EndSCHEMATC
